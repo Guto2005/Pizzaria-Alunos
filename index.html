@@ -21,9 +21,23 @@
     <link rel="stylesheet" href="./_estilos/layout.css">
     <link rel="stylesheet" href="./_estilos/tipografia.css">
     <link rel="stylesheet" href="./_estilos/animacao.css">
-
+    <link href="./_estilos/layout-tablet.css" rel="stylesheet" media="screen and (max-width:1024px)">
+    <link href="./_estilos/layout-mobile.css" rel="stylesheet" media="screen and (max-width:812px)">
+    
+    <!--Chamada para arquivo js-->
+    <script src="./_scripts/script.js"></script>
+    
     <!-- Biblioteca de animações CSS-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" referrerpolicy="no-referrer">
+
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/shortcuts/sticky.min.js" integrity="sha512-O5YCLUxCY2OBc4rfpnKUIgE4LGuCiW8CrJ7ty4hvkBAAKUOnlbomEFWd3a6ruRnFvO3LG2wiaGiJ1heOvdppvA==" crossorigin="anonymous"></script>
+
     <title>Pizzaria Donatella</title>
 </head>
  
@@ -312,19 +326,37 @@
     
             </div>
     
-    
+            <section id="plano-principal"></section>
         </section>
         
     </main>
     
-    <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/shortcuts/sticky.min.js" integrity="sha512-O5YCLUxCY2OBc4rfpnKUIgE4LGuCiW8CrJ7ty4hvkBAAKUOnlbomEFWd3a6ruRnFvO3LG2wiaGiJ1heOvdppvA==" crossorigin="anonymous"></script>
-    <!--Chamada para arquivo js-->
-    <script src="./_scripts/script.js"></script>
+    <div id="transicao-plano-rodape"></div>
+
+    <footer>
+        <div id="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116690.29796050226!2d-46.38721591392244!3d-23.94021202026602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce039dcd3f10e9%3A0x643657ade3927eb3!2sSenac%20Santos!5e0!3m2!1spt-BR!2sbr!4v1709313724724!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div id="info">
+            <h4>Endereço e Telefone</h4>
+            <ul>
+                <li>AV Conselheiro Nébias</li>
+                <li>Santos-SP</li>
+                <li>CEP:11075-320</li>
+                <li>Fone: (11) 9999-9999</li>
+            </ul>
+
+            <div id="redes-sociais">
+                <ion-icon id="facebook" name="logo-facebook"></ion-icon>
+                <ion-icon id="instagram" name="logo-instagram"></ion-icon>
+                <ion-icon name="logo-twitter"></ion-icon>
+                <ion-icon name="logo-youtube"></ion-icon>
+                <ion-icon name="logo-linkedin"></ion-icon>
+            </div>
+        </div>
+        <div id="pizza-rodape-decoracao"></div>
+    </footer>
+
     
 </body>
  
